@@ -1,0 +1,17 @@
+:root{
+
+    --color-primary:#ff7a1a;
+
+    --color-text:#222222;
+
+    --color-background:#faf8f5;
+
+    --color-border:#e5e5e5;
+
+    --container-width:1200px;
+
+    --transition:.25s;
+
+    --radius:16px;
+
+}
