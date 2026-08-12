@@ -454,7 +454,7 @@ body{
 @media (max-width: 600px) {
 
     .newsletter {
-        padding: 70px 0;
+        padding: 45px 0;
     }
 
     .newsletter__box {
@@ -479,7 +479,7 @@ body{
     }
 
     .projects {
-        padding: 70px 0;
+        padding: 45px 0;
     }
 
     .projects__title {
@@ -503,7 +503,7 @@ body{
     }
 
     .about {
-        padding: 70px 0;
+        padding: 45px 0;
     }
 
     .about__container {
