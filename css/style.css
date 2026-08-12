@@ -434,6 +434,31 @@ body{
 
 @media (max-width: 600px) {
 
+    .about {
+        padding: 70px 0;
+    }
+
+    .about__container {
+        gap: 40px;
+    }
+
+    .about__image {
+        max-width: 100%;
+    }
+
+    .about__title {
+        font-size: 2.3rem;
+    }
+
+    .about__description {
+        font-size: 0.92rem;
+    }
+
+    .about__social {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
     .container {
         width: min(100% - 40px, var(--container-width));
     }
@@ -500,4 +525,155 @@ body{
         border-radius: 20px;
     }
 
+}
+
+/* ========================================
+   ABOUT
+======================================== */
+
+.about {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 0;
+}
+
+.about__container {
+    display: grid;
+
+    grid-template-columns: 390px 1fr;
+
+    align-items: center;
+
+    gap: 64px;
+}
+
+
+/* ========================================
+   ABOUT IMAGE
+======================================== */
+
+.about__image {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 0.82;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f1eee9 0%,
+            #f9dcc7 100%
+        );
+
+    border: 1px solid #ddd8d2;
+
+    border-radius: 22px;
+}
+
+.about__image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.about__image-label {
+    position: absolute;
+
+    left: 22px;
+    bottom: 22px;
+
+    color: #6c5140;
+
+    font-size: 0.68rem;
+    font-weight: 600;
+
+    letter-spacing: 0.14em;
+}
+
+
+/* ========================================
+   ABOUT CONTENT
+======================================== */
+
+.about__content {
+    max-width: 680px;
+}
+
+.about__eyebrow {
+    display: block;
+
+    margin-bottom: 24px;
+
+    color: var(--color-primary);
+
+    font-size: 0.78rem;
+    font-weight: 800;
+
+    letter-spacing: 0.14em;
+}
+
+.about__title {
+    max-width: 650px;
+
+    margin-bottom: 28px;
+
+    color: var(--color-text);
+
+    font-size: clamp(2.4rem, 4vw, 3.5rem);
+    font-weight: 700;
+
+    line-height: 1.12;
+
+    letter-spacing: -0.035em;
+}
+
+.about__description {
+    max-width: 700px;
+
+    margin-bottom: 18px;
+
+    color: #707070;
+
+    font-size: 1rem;
+    font-weight: 400;
+
+    line-height: 1.75;
+}
+
+
+/* ========================================
+   ABOUT SOCIAL
+======================================== */
+
+.about__social {
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+    margin-top: 30px;
+}
+
+.about__social-link {
+    color: #686868;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    transition:
+        color var(--transition),
+        transform var(--transition);
+}
+
+.about__social-link:hover {
+    color: var(--color-primary);
+
+    transform: translateY(-2px);
 }
