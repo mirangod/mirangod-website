@@ -478,7 +478,7 @@ body{
         height: 50px;
     }
 
-        .projects {
+    .projects {
         padding: 70px 0;
     }
 
@@ -507,11 +507,15 @@ body{
     }
 
     .about__container {
+        grid-template-columns: 1fr;
         gap: 40px;
     }
 
     .about__image {
-        max-width: 100%;
+        width: 100%;
+        max-width: 280px;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto;
     }
 
     .about__title {
