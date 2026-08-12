@@ -1291,4 +1291,10 @@ body{
     .newsletter__form {
         width: 100%;
     }
+
+    .projects__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
 }
