@@ -599,9 +599,9 @@ body{
 
 }
 
-/* ========================================
+    /* ========================================
    ABOUT
-======================================== */
+    ======================================== */
 
 .about {
     min-height: 100vh;
@@ -1258,4 +1258,37 @@ body{
 
 .footer a:hover {
     color: #f28c28;
+}
+
+@media (max-width: 600px) {
+    .about__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about__image {
+        width: 100%;
+        max-width: 280px;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto;
+    }
+
+    .about__content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .newsletter__box {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .newsletter__content {
+        max-width: 100%;
+    }
+
+    .newsletter__form {
+        width: 100%;
+    }
 }
