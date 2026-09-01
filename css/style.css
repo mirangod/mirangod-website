@@ -1210,6 +1210,38 @@ body{
         box-shadow var(--transition);
 }
 
+/* ========================================
+   NEWSLETTER MESSAGE
+======================================== */
+
+.newsletter__message {
+    min-height: 20px;
+
+    margin: 0;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    text-align: center;
+
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+.newsletter__message--success {
+    color: #3f7d4f;
+
+    opacity: 1;
+}
+
+.newsletter__message--error {
+    color: #c65353;
+
+    opacity: 1;
+}
+
 .newsletter__button:hover {
     background: #ff6d08;
 
