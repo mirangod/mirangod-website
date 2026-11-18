@@ -67,13 +67,17 @@ if (newsletterForm) {
             });
 
 
-            const data = await response.json();
+            let data = null;
+            try {
+                data = await response.json();
+            } catch {
+                // APIs and proxies may return HTML or an empty body on failure.
+            }
 
-
-            if (!response.ok || !data.success) {
+            if (!response.ok || !data || data.success !== true) {
 
                 throw new Error(
-                    data.error || "Não foi possível realizar o cadastro."
+                    data?.error || "Não foi possível realizar o cadastro."
                 );
 
             }

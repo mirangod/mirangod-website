@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="#f8f6f2">
 
 </head>
 
@@ -47,7 +48,7 @@
 
         <div class="container">
 
-            <a href="#" class="logo">
+            <a href="/" class="logo" aria-label="Mirangod — início">
                 MIRANGOD
             </a>
 
@@ -162,7 +163,11 @@
                 <div class="about__image">
 
                     <img
-                        src="assets/images/matheus.jpg"
+                        src="assets/images/matheus-optimized.jpg"
+                        width="1100"
+                        height="2384"
+                        loading="lazy"
+                        decoding="async"
                         alt="Matheus Coelho, desenvolvedor independente de jogos"
                     >
 
@@ -222,7 +227,7 @@
                         </a>
 
                         <a
-                            href="#"
+                            href="https://mirangod.itch.io/"
                             aria-label="Itch.io"
                             class="about__social-link"
                         >
@@ -271,18 +276,16 @@
                 <div class="projects__grid">
 
 
-                    <!-- FUJA DO GOBLIN -->
-
                     <article class="project-card">
 
                         <div class="project-card__visual">
 
                             <div class="project-card__icon">
-                                <span class="project-card__controller">⌁</span>
+                                <span class="project-card__controller" aria-hidden="true">🧀</span>
                             </div>
 
                             <span class="project-card__visual-label">
-                                GAME PROJECT
+                                JOGO EM DESENVOLVIMENTO
                             </span>
 
                         </div>
@@ -291,151 +294,36 @@
                         <div class="project-card__content">
 
                             <h3 class="project-card__title">
-                                Fuja do Goblin: Jogo de Lógica
+                                Pegue o Queijo
                             </h3>
 
                             <p class="project-card__description">
-                                Um jogo de lógica onde o jogador precisa encontrar
-                                maneiras de fugir de um goblin através de diferentes
-                                mini jogos e desafios.
+                                Um jogo autoral em desenvolvimento. Em breve, mais
+                                detalhes sobre a ideia, as mecânicas e o progresso.
                             </p>
 
 
                             <div class="project-card__info">
 
                                 <span>
-                                    Estratégia · Educativo
+                                    Jogo independente
                                 </span>
 
                                 <span>
-                                    Mobile · Android
+                                    Em desenvolvimento
                                 </span>
 
                             </div>
 
 
                             <span class="project-card__status">
-                                Protótipo jogável
+                                Projeto atual
                             </span>
 
 
-                            <span class="project-card__link">
-                                Saiba mais <span>→</span>
-                            </span>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- JOGO DA FEIRA -->
-
-                    <article class="project-card">
-
-                        <div class="project-card__visual">
-
-                            <div class="project-card__icon">
-                                <span class="project-card__controller">⌁</span>
-                            </div>
-
-                            <span class="project-card__visual-label">
-                                GAME PROJECT
-                            </span>
-
-                        </div>
-
-
-                        <div class="project-card__content">
-
-                            <h3 class="project-card__title">
-                                Jogo da Feira
-                            </h3>
-
-                            <p class="project-card__description">
-                                Um jogo casual inspirado em Suika Game onde você
-                                trabalha em uma feira vendendo frutas. Cuidado para
-                                não rasgar as sacolas dos clientes.
-                            </p>
-
-
-                            <div class="project-card__info">
-
-                                <span>
-                                    Quebra-cabeça · Casual
-                                </span>
-
-                                <span>
-                                    Mobile · Android
-                                </span>
-
-                            </div>
-
-
-                            <span class="project-card__status">
-                                Em desenvolvimento
-                            </span>
-
-
-                            <span class="project-card__link">
-                                Saiba mais <span>→</span>
-                            </span>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PROJETO RPG -->
-
-                    <article class="project-card">
-
-                        <div class="project-card__visual">
-
-                            <div class="project-card__icon">
-                                <span class="project-card__controller">⌁</span>
-                            </div>
-
-                            <span class="project-card__visual-label">
-                                GAME PROJECT
-                            </span>
-
-                        </div>
-
-
-                        <div class="project-card__content">
-
-                            <h3 class="project-card__title">
-                                Projeto RPG
-                            </h3>
-
-                            <p class="project-card__description">
-                                Projeto de um RPG baseado em turnos, explorando
-                                sistemas de combate, progressão e construção
-                                de mundo.
-                            </p>
-
-
-                            <div class="project-card__info">
-
-                                <span>
-                                    RPG
-                                </span>
-
-                                <span>
-                                    PC · Mobile
-                                </span>
-
-                            </div>
-
-
-                            <span class="project-card__status">
-                                Em planejamento
-                            </span>
-
-
-                            <span class="project-card__link">
-                                Saiba mais <span>→</span>
-                            </span>
+                            <a class="project-card__link" href="https://mirangod.com.br/pegue-o-queijo/">
+                                Saiba mais <span aria-hidden="true">→</span>
+                            </a>
 
                         </div>
 
@@ -544,17 +432,16 @@
 
     <script src="js/script.js"></script>
 
-</body>
-
 <footer class="footer">
     <div class="footer-content">
         <strong>mirangod</strong>
         <span>© 2026. Todos os direitos reservados.</span>
 
-        <a href="https://github.com/mirangod" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/matheusmirandacoelho" target="_blank">LinkedIn</a>
-        <a href="https://itch.io/" target="_blank">itch.io</a>
-        <a href="mailto:seuemail@exemplo.com">E-mail</a>
+        <a href="https://github.com/mirangod" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/matheusmirandacoelho" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://mirangod.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a>
+        <a href="mailto:contato@mirangod.com.br">E-mail</a>
         <a href="/politica-de-privacidade/">Política de Privacidade</a>
     </div>
 </footer>
+</body>

@@ -1,17 +1,17 @@
 :root{
 
-    --color-primary:#ff7a1a;
+    --color-primary:#e96812;
 
     --color-text:#222222;
 
-    --color-background:#faf8f5;
+    --color-background:#f8f6f2;
 
-    --color-border:#e5e5e5;
+    --color-border:#e8e1d9;
 
     --container-width:1200px;
 
-    --transition:.25s;
+    --transition:180ms ease;
 
-    --radius:16px;
+    --radius:20px;
 
 }
